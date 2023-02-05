@@ -1,0 +1,37 @@
+
+.formContainer{
+    background-color: rgb(221, 221, 221);
+
+    border-width: 5px;
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 20vh 60vh 10vh;
+    grid-template-areas: "h h"
+                         "m m"
+                         "f .";
+}
+
+header{
+    background-color: rgb(221, 221, 221);
+    height: 100%;
+    grid-area: h;
+}
+
+main{
+    background-color: rgb(221, 221, 221);
+    height: 100%;
+    grid-area: m;
+}
+
+aside{
+    background-color: rgb(221, 221, 221);
+    height: 100%;
+    grid-area: a;
+}
+
+footer{
+    background-color: rgb(221, 221, 221);
+    height: 100px;
+    grid-area: f;
+}
