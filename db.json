@@ -1,0 +1,15 @@
+{
+    "ManutencaoEquipamento": [
+      { "id": 1, "tipo": "Eletrônicos", "descricao": "Concerto de Televisão", "valor": 250.00 },
+      { "id": 2, "tipo": "Eletrodomésticos", "descricao": "Concerto de Microondas", "valor": 100.00 },
+      { "id": 2, "tipo": "Computadores e Periféricos", "descricao": "Concerto de PC e Notebooks", "valor": 130.00 }
+    ],
+    
+    "RealizacaoServico": [
+        { "id": 1, "tipo": "Limpeza de Rua", "descricao": "Polda de Árvore", "valor": 80.00 }
+    ],
+    
+    "Compra": [
+        { "id": 1, "tipo": "Compra", "descricao": "Escada Articulada 3x4", "marca": "Tramontina", "valor": 600.00 }
+    ]
+}

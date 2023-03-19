@@ -39,3 +39,8 @@ export const FormFieldsContainer = styled.div`
     }
         
 `
+
+export const ErrorText = styled.p`
+  color: #FF0000;
+  margin: 10px, 0;
+`

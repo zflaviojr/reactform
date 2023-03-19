@@ -13,4 +13,4 @@ export const InputText = styled.input`
   color: #999999;
 
   margin-top: 12px;
-`;
+`

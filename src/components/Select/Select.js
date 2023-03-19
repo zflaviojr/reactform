@@ -1,10 +1,11 @@
 import { Controller } from "react-hook-form";
 import { SelectContainer } from "./styles";
+import { ErrorText } from "../Form/FormFieldsContainer";
 
 const Select = ({name, label, values, control, errorMessage, ...rest}) => {
     return (
       <>
-        {label}
+        <label htmlFor='{name}'>{label}</label>
         {/* <SelectContainer id={name} name={name}>
             {values.map(option => {
                 return <option key={option} value="{option}">{option}</option>
@@ -17,7 +18,7 @@ const Select = ({name, label, values, control, errorMessage, ...rest}) => {
             ( {field} ) =>
             <SelectContainer id={name} name={name} {...field} {...rest}>
               {values.map(option => (
-                <option key={option} value={option}>{option}</option>
+                <option key={option.id} value={option.id}>{option.descricao}</option>
               ))}
             </SelectContainer>
           }
@@ -25,7 +26,7 @@ const Select = ({name, label, values, control, errorMessage, ...rest}) => {
           
           /* render={( {field} ) => <input alt="Teste" id={name} type="text"  {...field} {...rest} />} */
         />
-        {errorMessage ? <div color="#FF0000">errorMessage</div> : null}
+        {errorMessage ? <ErrorText>{errorMessage}</ErrorText> : null}
       </>
     );
   }
